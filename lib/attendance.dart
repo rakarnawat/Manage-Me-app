@@ -226,7 +226,9 @@ class _MyApp3State extends State<MyApp3> {
                             ],
                           ),onTap: () async{
                           insertUsers();
-
+                            ScaffoldMessenger.of(context).showSnackBar(
+                                SnackBar(content: Text("Data Updated Successfully")));
+                          
 
                           //Navigator.push(context,
                           //MaterialPageRoute(builder: (context) => const MyApp()),
